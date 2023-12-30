@@ -1,0 +1,41 @@
+<!-- activity_video_call.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/v2_gradient"
+    android:layout_height="match_parent">
+
+    <!-- Remote user's video feed -->
+    <FrameLayout
+        android:id="@+id/remoteVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Local user's video feed -->
+    <FrameLayout
+        android:id="@+id/localVideoView"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+    <!-- Buttons for call actions (e.g., end call, mute, switch camera) -->
+    <!-- You can add buttons as per your requirements -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <!-- Sample buttons -->
+        <Button
+            android:id="@+id/endCallButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="End Call" />
+
+        <!-- Add more buttons for functionalities like mute, switch camera, etc. -->
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/google_white"
+    tools:context=".activities.ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:id="@+id/appBar"
+        android:background="@color/cupertino_grey">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backFromChat"
+            android:textColor="@color/cupertino_blue"
+            android:layout_marginStart="15sp"
+            android:textSize="25sp"
+            android:drawablePadding="0sp"
+            android:layout_centerVertical="true"
+            app:drawableStartCompat="@drawable/ios_back" />
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:id="@+id/toolbarLayout"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/chatProfilePic"
+                android:layout_width="48sp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_username"
+                android:id="@+id/chatUserName"
+                android:layout_gravity="center"
+                android:textStyle="normal"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/baseline_arrow_forward_ios_24"
+                android:drawablePadding="4dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_add_ic_call_24"
+            android:layout_toEndOf="@+id/toolbarLayout"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/callButton"
+            android:contentDescription="@string/todo" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar"
+        android:layout_below="@id/appBar"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/bottomBar">
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:id="@+id/inputChat"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:hint="@string/app_name"
+            android:backgroundTint="@color/google_search"
+            android:textColorHint="#767680"
+            android:textColor="@color/black"
+            android:background="@drawable/chatbackground"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:id="@+id/sendIV"
+            android:src="@drawable/send"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

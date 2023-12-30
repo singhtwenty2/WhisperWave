@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".activities.OTPAuthentication">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cupertino_grey"
+        android:id="@+id/cv1"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14sp"
+            android:layout_marginTop="14sp"
+            android:layout_marginEnd="14sp"
+            android:layout_marginBottom="14sp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/iv1"
+        android:layout_below="@+id/cv1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_logo"/>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/enter_otp_to_validate"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tv1"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/inputOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="20sp"
+                android:autofillHints="Enter OTP"
+                android:hint="@string/otp"
+                android:inputType="phone"
+                android:maxLength="6"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/submitOTPBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputOTP"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="30sp"
+                android:backgroundTint="@color/cupertino_blue"
+                android:padding="12sp"
+                android:text="@string/submit_otp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:id="@+id/iosLoadAnim"
+                app:lottie_rawRes="@raw/ios_loading"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_below="@+id/inputOTP"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100sp"
+                android:visibility="visible"/>
+            <TextView
+                android:id="@+id/resendOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputOTP"
+                android:layout_marginStart="60sp"
+                android:layout_marginTop="150sp"
+                android:layout_marginEnd="60sp"
+                android:layout_marginBottom="30sp"
+                android:padding="10sp"
+                android:text="@string/resend"
+                android:gravity="center"
+                android:textColor="@color/cupertino_blue"
+                android:textSize="20sp"
+                />
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+`<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="google_white">#DFEDF5</color>
+    <color name="google_search">#BED9E4</color>
+    <color name="custom_white">#FFFFFF</color>
+    <color name="cupertino_grey">#F1F1F2</color>
+    <color name="cupertino_blue">#0078FF</color>
+    <color name="receive_chat">#E9E9EB</color>
+    <color name="send_chat">#0078FF</color>
+    <color name="dark_bg">#010101</color>
+    <color name="dark_receive_chat">#1C1C1E</color>
+    <color name="dark_toolbar">#1B1B1B</color>
+    <color name="profile_text">#F5F5F5</color>
+</resources>

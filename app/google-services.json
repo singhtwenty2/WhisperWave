@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739927840870",
+    "project_id": "imessagebackend",
+    "storage_bucket": "imessagebackend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739927840870:android:643d5c4d7bdf16a922b5a7",
+        "android_client_info": {
+          "package_name": "com.example.imessage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdKMqO_-lsQr3OovNMHxBHWB-YY0lJnmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:baselineAligned="false"
+    android:elevation="10dp">
+
+    <include
+        layout="@layout/profile_picture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/userNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="@string/test_user_72"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lastMessageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="sans-serif-light"
+                android:padding="8dp"
+                android:text="@string/_10_10"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lastMassageTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
+            android:padding="8dp"
+            android:text="@string/hi_"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/moveForward"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/todo"
+        android:padding="2dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24" />
+</LinearLayout>

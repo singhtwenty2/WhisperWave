@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/angled_gradient_background"
+    tools:context=".activities.EditUserProfile">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doneTV"
+        android:layout_alignParentEnd="true"
+        android:text="@string/done"
+        android:background="@drawable/transparent_button_background"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:src="@drawable/user_icon"
+        android:background="@drawable/circular_shape"
+        android:id="@+id/otherUserProfilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otherUserName"
+        android:padding="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_below="@id/otherUserProfilePic"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/belowProfileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otherUserName"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/callItem"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/connect"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/chatItem"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/chat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/dialogue"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/videoItem"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/video_call" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/visual_dialogue"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_info"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/belowProfileLayout"
+        android:textColor="@color/dark_toolbar"
+        android:layout_marginStart="25dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otherUserPhone"
+        android:padding="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:fontFamily="sans-serif-condensed"
+        android:drawablePadding="20dp"
+        android:textColor="@color/dark_receive_chat"
+        android:textSize="30sp"
+        android:layout_below="@+id/belowProfileLayout"
+        android:layout_marginTop="40dp"
+        app:drawableStartCompat="@drawable/baseline_add_ic_call_24" />
+
+</RelativeLayout>

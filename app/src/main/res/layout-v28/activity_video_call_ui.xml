@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/google_white"
+    android:layout_height="match_parent">
+
+    <!-- Remote user's video feed -->
+    <FrameLayout
+        android:id="@+id/remoteVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Local user's video feed -->
+    <FrameLayout
+        android:id="@+id/localVideoView"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+    <!-- Bottom sheet for call actions -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorSurface"
+        android:outlineSpotShadowColor="?attr/colorOnSurface"
+        android:translationZ="4dp"
+        android:elevation="8dp"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Sample buttons -->
+            <Button
+                android:id="@+id/endCallButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="End Call" />
+
+            <!-- Add more buttons for functionalities like mute, switch camera, etc. -->
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

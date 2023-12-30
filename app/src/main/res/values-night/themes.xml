@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IMessage" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/black</item>
+    </style>
+    <!-- Dark Theme -->
+    <style name="AppTheme.Dark" parent="Base.Theme.IMessage">
+        <!-- Define dark theme attributes here -->
+        <item name="colorPrimary">@color/black</item>
+        <!-- Other attributes -->
+    </style>
+</resources>
